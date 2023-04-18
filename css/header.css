@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+header .burger {
+  display: none;
+  position: absolute;
+  top: 3vh;
+  right: 5vh;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .burger {
+    display: block;
+  }
+}
+header .burger .line {
+  height: .5vh;
+  width: 4vh;
+  border-radius: 10px;
+  background-color: #666060;
+  margin-bottom: 0.7vh;
+}
+
+header .close-btn {
+  display: none;
+  position: absolute;
+  top: 2vh;
+  right: 5.5vh;
+  font-size: 24px;
+  font-weight: 600;
+  color: #443b3b;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 5;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 2vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.header div:first-of-type {
+  width: 20%;
+  padding-right: 50vh;
+}
+
+.header div:first-of-type img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header div:first-of-type img {
+    width: 1100%;
+    padding: 0 1vh;
+  }
+}
+
+.header div:nth-child(2) a {
+  text-decoration: none;
+  color: #3e37c9da;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.15s linear;
+}
+
+.header div a:hover {
+  text-decoration: underline;
+  color: #024ad0;
+}
+
+.header div:nth-child(2) {
+  padding: 1vh 3vh;
+  display: inline-flex;
+  line-height: 1.3;
+}
+
+.header div:nth-child(2) .e {
+  display: flex;
+  flex-direction: column;
+}
+
+.header div:nth-child(2) p {
+  font-size: 13px;
+  color: #443b3b;
+}
+
+.header div:nth-child(2) img {
+  filter: invert(20%) sepia(2%) saturate(3194%) hue-rotate(314deg) brightness(80%) contrast(86%);
+  width: 5vh;
+  height: 5vh;
+  background-color: rgba(128, 128, 128, 0.127);
+  border-radius: 30px;
+  padding: 1vh 1vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header div:nth-child(2){
+    display: none;
+  }
+}
+
+.header div:nth-child(3) {
+  display: inline-flex;
+  line-height: 0.3;
+}
+
+
+.header div:nth-child(3) img {
+  width: 4.5vh;
+  height: 4.5vh;
+  background-color: rgba(128, 128, 128, 0.127);
+  border-radius: 30px;
+  padding: 1.3vh 1.3vh;
+  filter: invert(20%) sepia(2%) saturate(3194%) hue-rotate(314deg) brightness(80%) contrast(86%);
+}
+
+.header div:nth-child(3) .e {
+  display: flex;
+  flex-direction: column;
+}
+
+.header div:nth-child(3) p {
+  font-size: 13px;
+  color: #888888;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header div:nth-child(3){
+    display: none;
+  }
+}
+
+.ulmenu {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: #3028c5fb;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .ulmenu{
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 4;
+      left: 0;
+      top: 0;
+  }
+}
+
+.ulmenu ul {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-size: 15px;
+  padding-bottom: 0.5vh;
+  transition: all 0.15s linear;
+  height: 5vh;
+}
+
+.ulmenu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.ulmenu ul li a:hover {
+  background-color: white;
+  color: black;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  margin-right: 1vh;
+  padding: 0.5vh 1vh;
+  border-radius: 10px;
+  transition: all 0.1s linear;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+
+.ulmenu ul li .sub-menu {
+  z-index: 100;
+  font-size: 12px;
+  position: absolute;
+  line-height: 3;
+  display: none;
+  width: 40vh;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 15px 15px;
+  background-color: #2f28c5da;
+  padding: 0;
+  height: auto;
+  margin-top: 1.2vh;
+  transform: translateY(-1vh);
+}
+
+.ulmenu ul li:hover .sub-menu {
+  display: block;
+}
+
+.ulmenu ul li .sub-menu li {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding-left: 1vh;
+}
+
+.ulmenu ul li .sub-menu li a:hover {
+  color: #024ad0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}

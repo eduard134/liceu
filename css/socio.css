@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.cont {
+    margin-top: 5vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
+.cont h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6vh;
+    font-size: 28px;
+    color: #3f37c9;
+    font-weight: 700;
+}
+
+.cont div {
+    position: relative;
+    left: 15%;
+    right: 15%;
+    border-radius: 10px;
+    padding: 2vh;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cont div video{
+    width: 100%;
+}
+
+.cont div p{
+    margin-top: 2vh;
+}
+
+.cont div ul{
+    margin-top: 2vh;
+    padding-left: 3vh;
+}
+
+.cont div img{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+.social {
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.social .buton {
+    display: inline-block;
+    width: 7vh;
+    height: 6.5vh;
+    overflow: hidden;
+    margin: 0 0.5vh;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+.social .buton a {
+    text-decoration: none;
+}
+
+.social .buton:hover {
+    width: 22vh;
+}
+
+.social .buton .icon {
+    display: inline-block;
+    height: 6.6vh;
+    width: 7vh;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    line-height: 60px;
+}
+
+.social .buton:nth-child(1):hover .icon {
+    background: #4267b2;
+}
+
+.social .buton:nth-child(2):hover .icon {
+    background: #55acee;
+}
+
+.social .buton:nth-child(3):hover .icon {
+    background: #0077b5;
+}
+
+.social .buton:nth-child(4):hover .icon {
+    background: #4c6c91;
+}
+
+.social .buton:nth-child(5):hover .icon {
+    background: #ff0000;
+}
+
+.social .buton .icon img {
+    width: 50%;
+    transition: all 0.3s ease-out;
+}
+
+.social .buton:hover .icon img {
+    color: #fff;
+}
+
+.social .buton span {
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease-out;
+}
+
+.social .buton:nth-child(1):hover span {
+    color: #4267b2;
+}
+
+.social .buton:nth-child(2):hover span {
+    color: #55acee;
+}
+
+.social .buton:nth-child(3):hover span {
+    color: #0077b5;
+}
+
+.social .buton:nth-child(4):hover span {
+    color: #4c6c91;
+}
+
+.social .buton:nth-child(5):hover span {
+    color: #ff0000;
+}
