@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+footer{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    background-color: #3f37c9;
+    width: 100%;
+    
+}
+
+footer .container{
+    position: relative;
+    display: flex;
+    padding: 12vh 10vh;
+    justify-content: space-around;
+}
+
+footer .container div h2{
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: white;
+    font-weight: 550;
+    padding-bottom: 1.5vh;
+}
+
+footer .container div h3{
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.104) ;
+    height: 1px;
+}
+
+footer .container div a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    line-height: 4vh;
+}
+
+footer .container div a p{
+    padding: .7vh 0;
+    margin-top: 1vh;
+}
+
+footer .container div a p:hover{
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.29);
+    transform: translateX(1vh);
+    transition: all 0.15s linear;
+}
+
+footer div .visit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    line-height: 2.5vh;
+    padding: .4vh 0;
+    margin-top: 1vh;
+}
+
+footer .bot{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5vh;
+    color: white;
+    background-color:rgba(0,0,0, 0.12);
+    margin-top: 6vh;
+}
+
+footer .bot p{
+    font-size: 13px;
+    color: rgba(255,255,255, 0.7);
+    padding: 3vh 15vh;
+}
+
+footer .bot a{
+    margin: 3vh 15vh;
+    width: 1.5%;
+}
+
+footer .bot a img{
+    float: right;
+    width: 100%;
+    background-color: white;
+    border-radius: 50px;
+}
